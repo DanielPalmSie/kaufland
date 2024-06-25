@@ -11,7 +11,6 @@ use App\Presentation\CLI\ImportProductsCommand;
 
 use Dotenv\Dotenv;
 
-
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
