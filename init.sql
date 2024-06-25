@@ -1,0 +1,20 @@
+CREATE TABLE products (
+                          entity_id INTEGER PRIMARY KEY,
+                          category_name VARCHAR(255),
+                          sku VARCHAR(255),
+                          name VARCHAR(255),
+                          description TEXT,
+                          shortdesc TEXT,
+                          price DECIMAL(10, 2),
+                          link TEXT,
+                          image TEXT,
+                          brand VARCHAR(255),
+                          rating INTEGER,
+                          caffeine_type VARCHAR(255),
+                          count INTEGER,
+                          flavored BOOLEAN,
+                          seasonal BOOLEAN,
+                          instock BOOLEAN,
+                          facebook INTEGER,
+                          is_kcup BOOLEAN
+);
