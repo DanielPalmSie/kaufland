@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Application\Services;
 
+use App\Application\Interfaces\XMLReaderInterface;
 use Psr\Log\LoggerInterface;
 use App\Infrastructure\XML\XMLReader;
 use App\Domain\Repositories\ProductRepositoryInterface;
@@ -13,7 +14,7 @@ readonly class ProductService
     public function __construct
     (
         private ProductRepositoryInterface $productRepository,
-        private XMLReader                  $xmlReader,
+        private XMLReaderInterface         $xmlReader,
         private LoggerInterface            $logger
     ) {}
 

@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace App\Infrastructure\XML;
 
+use App\Application\Interfaces\XMLReaderInterface;
 use App\Domain\Entities\Product;
 
-class XMLReader
+class XMLReader implements XMLReaderInterface
 {
     public function read(string $filePath): array
     {
