@@ -56,7 +56,7 @@ class XMLReader implements XMLReaderInterface
         return $products;
     }
 
-    private function isValidItem($item): bool
+    public function isValidItem($item): bool
     {
         return isset($item->entity_id, $item->CategoryName, $item->sku, $item->name, $item->price, $item->link, $item->image, $item->Brand);
     }
