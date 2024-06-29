@@ -3,7 +3,7 @@
 use PHPUnit\Framework\TestCase;
 use App\Application\Services\ProductService;
 use App\Domain\Repositories\ProductRepositoryInterface;
-use App\Infrastructure\XML\XMLReader;
+use App\Application\Interfaces\ReaderInterface;
 use Psr\Log\LoggerInterface;
 use App\Domain\Entities\Product;
 
@@ -16,7 +16,7 @@ class ProductServiceTest extends TestCase
     protected function setUp(): void
     {
         $this->productRepository = $this->createMock(ProductRepositoryInterface::class);
-        $this->xmlReader = $this->createMock(XMLReader::class);
+        $this->xmlReader = $this->createMock(ReaderInterface::class);
         $this->logger = $this->createMock(LoggerInterface::class);
     }
 
